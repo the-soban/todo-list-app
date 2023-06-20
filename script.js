@@ -20,6 +20,13 @@ searchBtn.addEventListener('click', () => {
     saveData();
 });
 
+inputField.addEventListener('keypress', function(e){
+    if(e.key === "Enter"){
+        e.preventDefault();
+        searchBtn.click();
+    }
+});
+
 listBox.addEventListener('click', (e) => {
     if(e.target.tagName === "LI"){
         e.target.classList.toggle("checked");
