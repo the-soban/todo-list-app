@@ -184,6 +184,7 @@ html{
 .search-field{
     padding: 0px 0px 0px 10px;
     font-size: 0.7rem;
+    width: 100%;
 }
 
 .search-btn{
